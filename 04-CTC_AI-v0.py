@@ -129,12 +129,16 @@ network = create_network(nb_features, nb_labels, padding_value)
 
 print(network.summary())
 
+print(np.shape(x_train_len))
+print(x_train_len)
+print(np.shape(y_train_len))
+print(y_train_len)
 # CTC training
 network.fit(x=[x_train_pad, y_train_pad, x_train_len, y_train_len], y=np.zeros(nb_train), batch_size=batch_size, epochs=nb_epochs)
 
 
 # Evaluation: loss, label error rate and sequence error rate are requested
-eval = network.evaluate(x=[x_test, y_test, x_test_len, y_test_len],                            batch_size=batch_size, metrics=['loss', 'ler', 'ser'])
+eval = network.evaluate(x=[x_test, y_test, x_test_len, y_test_len], batch_size=batch_size, metrics=['loss', 'ler', 'ser'])
 
 
 # predict label sequences
