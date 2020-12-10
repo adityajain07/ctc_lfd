@@ -10,16 +10,16 @@ Date Started : This notebook was created on 2nd December, 2020
 About        : Implementing CNN+RNN+CTC
 '''
 # import comet_ml at the top of your file
-from comet_ml import Experiment
-
-# Create an experiment with your api key:
-experiment = Experiment(
-    api_key="epeaAhyRcHSkn92H4kusmbX8k",
-    project_name="ctc-lfd",
-    workspace="adityajain07",
-    log_code="True"
-)
-experiment.set_code()
+# from comet_ml import Experiment
+#
+# # Create an experiment with your api key:
+# experiment = Experiment(
+#     api_key="epeaAhyRcHSkn92H4kusmbX8k",
+#     project_name="ctc-lfd",
+#     workspace="adityajain07",
+#     log_code="True"
+# )
+# experiment.set_code()
 
 
 # In[1]:
